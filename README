@@ -1,0 +1,42 @@
+This web app showcases some of the best NBA players in the game today.
+
+You can choose from a couple of options for filtering the players (western conference,
+eastern conference, or exclusively point guards). The filters also can work in
+tandem with the sorting feature which sorts the players who match the filter setting
+in alphabetical order. 
+
+If you'd like to be able to see a more compact list of information without the images of
+the players, you can uncheck the "show images" checkbox to do so.
+
+For each player, you can also take a look at their stats by tapping on the "show stats"
+checkbox by each player's info.
+
+You can also revert to the default settings and see the original list if you'd like by 
+clicking the "Reset to Default" button.
+
+This web app gives valuable insight into each player by providing their photo, name,
+conference, team, position, points per game, rebounds per game, and assists per game.
+You might find this useful if you'd like to get a better sense of how the top players 
+in the NBA are performing this season so far.
+
+Link to deployed app: https://sheltered-mesa-98318.herokuapp.com
+
+I created three different components for this project: Filter, List, and Stats.
+
+The Filter component is a generic component that takes in some form of data and 
+is responsible for maintaining the state of the filter and sort options chosen
+by the user. It renders the filters on screen as well as a List component. It 
+has 4 state keys: sort, west, east, and pg. These are to keep track of what 
+filters and sorting mechanisms the user has currently asked for.
+
+The List component is also a generic component that takes in some form of data
+and creates div elements to display each item in the data object passed in.
+In this case, it is the player's photo, name, conference, team, and position.
+It also utilizes the Stats component for displaying each players' game stats.
+It has 1 state key: showImages. This is to keep track of whether or not the user
+wants to show the images of each player.
+
+The Stats component is another generic component that takes in some form of data
+and creates a table that properly formats that data. In this case, it is the
+player's average points, rebounds, and assists. It has 1 state key: showStats. This
+is to keep track of whether or not the user wants to show the stats of each player.

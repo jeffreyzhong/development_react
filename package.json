@@ -1,9 +1,10 @@
 {
-  "name": "development_react",
+  "name": "1300_development",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
